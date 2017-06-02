@@ -12,6 +12,8 @@ cd tmux-$TMUX_LATEST_TAG
 
 sudo make install
 
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 if [ ! -d "~/projects" ]; then
   mkdir ~/projects
 fi
@@ -27,5 +29,3 @@ if [ ! -f ~/.tmux.conf ]
 then
     ln -s ~/projects/tmux.conf/.tmux.conf ~/.tmux.conf
 fi
-
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
