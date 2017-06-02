@@ -1,4 +1,4 @@
-sudo apt install libevent-dev ncurses-dev jq
+sudo apt install libevent-dev ncurses-dev jq git
 
 TMUX_LATEST_TAG=$(curl https://api.github.com/repos/tmux/tmux/tags -s | jq -r '.[0].name')
 
@@ -27,3 +27,5 @@ if [ ! -f ~/.tmux.conf ]
 then
     ln -s ~/projects/tmux.conf/.tmux.conf ~/.tmux.conf
 fi
+
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
