@@ -1,4 +1,4 @@
-if [ ! -d ~/projects ]; then
+if [ ! -d "~/projects" ]; then
     mkdir ~/projects
 fi
 
